@@ -7,8 +7,11 @@ public class Rabbit : MonoBehaviour
     [SerializeField] private InputActionReference _interactInputRef = null;
     [SerializeField] private InputActionReference _moveInputRef = null;
     [SerializeField] private CharacterController _controller = null;
-    [SerializeField] private float _speed = 0.0f;
-    [SerializeField] private float _rotationSpeed = 0.0f;
+    [SerializeField] private Transform _rayOrigin = null;
+    [SerializeField] private float _speed = 12f;
+    [SerializeField] private float _rotationSpeed = 350f;
+    [SerializeField] private float _maxDistance = 1f;
+    [SerializeField] private LayerMask _layerMask = default;
     #endregion Fields
 
     #region Properties
@@ -27,9 +30,17 @@ public class Rabbit : MonoBehaviour
         if (_interactInputRef.action.WasPerformedThisFrame())
         {
             Debug.Log("Interact");
-        }
 
-        
+            Ray ray = new Ray(_rayOrigin.position, transform.forward);
+            if (Physics.Raycast(ray, out RaycastHit hit, _maxDistance, _layerMask))
+            {
+                IInteractable interactable = hit.transform.gameObject.GetComponent<IInteractable>();
+                if (interactable != null)
+                {
+                    interactable.InteractWith(this);
+                }
+            }
+        }
         // rotation
         transform.Rotate(new Vector3(0, rawInput.x * _rotationSpeed * Time.deltaTime, 0));
 

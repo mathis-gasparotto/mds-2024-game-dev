@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Counter_Door
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce4ea561704d5280a96e8d6689dafcbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59,6 +63,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ce4ea561704d5280a96e8d6689dafcbc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5457722150580817880}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ce4ea561704d5280a96e8d6689dafcbc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3707089362353192134}
   m_SourcePrefab: {fileID: 100100000, guid: ce4ea561704d5280a96e8d6689dafcbc, type: 3}
 --- !u!1 &4650464837502052216 stripped
 GameObject:
@@ -86,3 +93,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.9999998, y: 1.956579, z: 1.7658298}
   m_Center: {x: 0.00000011920929, y: 0.97828937, z: 0}
+--- !u!114 &-3707089362353192134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650464837502052216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae3c4073e2ff4685b466125ddedef6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
