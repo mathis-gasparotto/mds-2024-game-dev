@@ -8,13 +8,18 @@ public class Rabbit : MonoBehaviour
     [SerializeField] private InputActionReference _moveInputRef = null;
     [SerializeField] private CharacterController _controller = null;
     [SerializeField] private Transform _rayOrigin = null;
-    [SerializeField] private float _speed = 12f;
-    [SerializeField] private float _rotationSpeed = 350f;
-    [SerializeField] private float _maxDistance = 1f;
+    [SerializeField] private float _speed = 10f;
+    [SerializeField] private float _rotationSpeed = 1000f;
+    [SerializeField] private float _maxDistance = 2f;
     [SerializeField] private LayerMask _layerMask = default;
+    [SerializeField] private Vector3 _foodLocalPosition = new Vector3(0f, 1.694f, 1.04f);
+
+    private Food _inHandFood = null;
     #endregion Fields
 
     #region Properties
+    public bool IsHoldingFood => _inHandFood != null;
+    public Food InHandFood => _inHandFood;
     #endregion Properties
 
     #region Methods
@@ -29,8 +34,6 @@ public class Rabbit : MonoBehaviour
 
         if (_interactInputRef.action.WasPerformedThisFrame())
         {
-            Debug.Log("Interact");
-
             Ray ray = new Ray(_rayOrigin.position, transform.forward);
             if (Physics.Raycast(ray, out RaycastHit hit, _maxDistance, _layerMask))
             {
@@ -41,19 +44,37 @@ public class Rabbit : MonoBehaviour
                 }
             }
         }
-        // rotation
-        transform.Rotate(new Vector3(0, rawInput.x * _rotationSpeed * Time.deltaTime, 0));
 
-        // movement
-        Vector3 movement = new Vector3(0, 0, rawInput.y);
-        movement  = transform.TransformDirection(movement);
+        // movement + rotation
+        Vector3 direction = new Vector3(-rawInput.y, 0f, rawInput.x);
+        if (direction.sqrMagnitude > 0.01f)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
+        }
 
-        _controller.SimpleMove(movement * _speed);
+        _controller.SimpleMove(direction * _speed);
     }
 
-    private void Trigger()
+    public void PickUpFood(Food food)
     {
-        Debug.Log("Trigger");
+        _inHandFood = food;
+
+        _inHandFood.transform.SetParent(transform);
+        _inHandFood.transform.localPosition = _foodLocalPosition;
+        _inHandFood.transform.localRotation = Quaternion.Euler(0f, -180f, 0f);
+
+        Debug.Log("Pick  food: " + _inHandFood);
+    }
+
+    public Food DropFood()
+    {
+        Food food = _inHandFood;
+        _inHandFood = null;
+
+        Debug.Log("Drop food: " + food);
+
+        return food;
     }
     #endregion Methods
 }
