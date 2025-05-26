@@ -33,7 +33,6 @@ public class Oven : MonoBehaviour, IInteractable
                 
                 if (_remainingIngredients.Count == 0)
                 {
-                    Debug.Log("Recipe complete");
                     Food result = Instantiate(_recipe.Result);
                     rabbit.PickUpFood(result);
                     _remainingIngredients = new List<FoodType>(_recipe.Ingredients);

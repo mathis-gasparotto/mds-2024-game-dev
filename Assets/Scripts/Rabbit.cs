@@ -23,11 +23,6 @@ public class Rabbit : MonoBehaviour
     #endregion Properties
 
     #region Methods
-    private void Start()
-    {
-        Debug.Log("Start");
-    }
-
     private void Update()
     {
         Vector2 rawInput = _moveInputRef.action.ReadValue<Vector2>();
@@ -63,16 +58,12 @@ public class Rabbit : MonoBehaviour
         _inHandFood.transform.SetParent(transform);
         _inHandFood.transform.localPosition = _foodLocalPosition;
         _inHandFood.transform.localRotation = Quaternion.Euler(0f, -180f, 0f);
-
-        Debug.Log("Pick  food: " + _inHandFood);
     }
 
     public Food DropFood()
     {
         Food food = _inHandFood;
         _inHandFood = null;
-
-        Debug.Log("Drop food: " + food);
 
         return food;
     }

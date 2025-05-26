@@ -19,6 +19,7 @@ public class PauseButton : MonoBehaviour
 
     public void PauseGame()
     {
+        Debug.Log(GameManager.Instance.IsGamePlayed);
         if (GameManager.Instance.IsGamePlayed)
         {
             GameManager.Instance.PauseGame();

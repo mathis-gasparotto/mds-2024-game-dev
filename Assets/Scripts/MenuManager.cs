@@ -9,6 +9,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private MainMenu _mainMenu = null;
     [SerializeField] private EndMenu _endMenu = null;
     [SerializeField] private GameMenu _gameMenu = null;
+    [SerializeField] private PauseMenu _pauseMenu = null;
 
     #region Methods
     private void Awake()
@@ -28,6 +29,7 @@ public class MenuManager : MonoBehaviour
         _mainMenu.Show();
         _endMenu.Hide();
         _gameMenu.Hide();
+        _pauseMenu.Hide();
     }
     
     public void ShowGameMenu()
@@ -35,6 +37,7 @@ public class MenuManager : MonoBehaviour
         _mainMenu.Hide();
         _endMenu.Hide();
         _gameMenu.Show();
+        _pauseMenu.Hide();
     }
 
     public void ShowEndMenu()
@@ -42,6 +45,17 @@ public class MenuManager : MonoBehaviour
         _mainMenu.Hide();
         _endMenu.Show();
         _gameMenu.Hide();
+        _pauseMenu.Hide();
+    }
+
+    public void ShowPauseMenu()
+    {
+        _pauseMenu.Show();
+    }
+
+    public void HidePauseMenu()
+    {
+        _pauseMenu.Hide();
     }
     #endregion Methods
 }

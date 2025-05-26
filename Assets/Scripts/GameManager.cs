@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     private int _score = 0;
     private float _timer = 0f;
+    private bool _isGameStarted = false;
     private bool _isGamePlayed = false;
     #endregion Fields
 
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
     public int Score => _score;
     public float Timer => _timer;
     public bool IsGamePlayed => _isGamePlayed;
+    public bool IsGameStarted => _isGameStarted;
     #endregion Properties
 
     #region Methods
@@ -39,6 +41,7 @@ public class GameManager : MonoBehaviour
         _score = 0;
         _timer = _timerStartValue;
         _isGamePlayed = false;
+        _isGameStarted = false;
         MenuManager.Instance.ShowMainMenu();
     }
 
@@ -58,11 +61,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void StartGame()
-    {
-        MenuManager.Instance.ShowGameMenu();
-    }
-
     public void PlayGame()
     {
         if (_isGamePlayed)
@@ -70,34 +68,47 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        SceneManager.LoadScene(1);
-        
+        AsyncOperation op = SceneManager.LoadSceneAsync(1);
+        op.completed += OnLoadOperationComplete;
+    }
+
+    private void OnLoadOperationComplete(AsyncOperation op)
+    {
+        op.completed -= OnLoadOperationComplete;
+
         _isGamePlayed = true;
+        _isGameStarted = true;
         _score = 0;
         _timer = _timerStartValue;
 
         MenuManager.Instance.ShowGameMenu();
+        OrderManager.Instance.AddNewOrder();
     }
 
     public void PauseGame()
     {
         _isGamePlayed = false;
+        MenuManager.Instance.ShowPauseMenu();
+        // disable inputs
     }
 
     public void ResumeGame()
     {
         _isGamePlayed = true;
+        MenuManager.Instance.HidePauseMenu();
     }
 
     public void EndGame()
     {
         _isGamePlayed = false;
+        _isGameStarted = false;
         MenuManager.Instance.ShowEndMenu();
     }
 
     public void RestartGame()
     {
         _isGamePlayed = false;
+        _isGameStarted = false;
         SceneManager.LoadScene(0);
         MenuManager.Instance.ShowMainMenu();
     }
