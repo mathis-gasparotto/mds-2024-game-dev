@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,11 +12,13 @@ public class GameManager : MonoBehaviour
 
     private int _score = 0;
     private float _timer = 0f;
+    private bool _isGamePlayed = false;
     #endregion Fields
 
     #region Properties
     public int Score => _score;
     public float Timer => _timer;
+    public bool IsGamePlayed => _isGamePlayed;
     #endregion Properties
 
     #region Methods
@@ -35,17 +38,68 @@ public class GameManager : MonoBehaviour
     {
         _score = 0;
         _timer = _timerStartValue;
+        _isGamePlayed = false;
+        MenuManager.Instance.ShowMainMenu();
     }
 
     private void Update()
     {
+        if (!_isGamePlayed)
+        {
+            return;
+        }
+
         _timer -= Time.deltaTime;
 
         if (_timer <= 0f)
         {
-            Debug.Log("Game over");
             _timer = 0f;
+            EndGame();
         }
+    }
+
+    public void StartGame()
+    {
+        MenuManager.Instance.ShowGameMenu();
+    }
+
+    public void PlayGame()
+    {
+        if (_isGamePlayed)
+        {
+            return;
+        }
+
+        SceneManager.LoadScene(1);
+        
+        _isGamePlayed = true;
+        _score = 0;
+        _timer = _timerStartValue;
+
+        MenuManager.Instance.ShowGameMenu();
+    }
+
+    public void PauseGame()
+    {
+        _isGamePlayed = false;
+    }
+
+    public void ResumeGame()
+    {
+        _isGamePlayed = true;
+    }
+
+    public void EndGame()
+    {
+        _isGamePlayed = false;
+        MenuManager.Instance.ShowEndMenu();
+    }
+
+    public void RestartGame()
+    {
+        _isGamePlayed = false;
+        SceneManager.LoadScene(0);
+        MenuManager.Instance.ShowMainMenu();
     }
 
     public void AddScore(int score)
