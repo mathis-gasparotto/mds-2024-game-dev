@@ -8,11 +8,12 @@ public class Rabbit : MonoBehaviour
     [SerializeField] private InputActionReference _moveInputRef = null;
     [SerializeField] private CharacterController _controller = null;
     [SerializeField] private Transform _rayOrigin = null;
-    [SerializeField] private float _speed = 10f;
+    [SerializeField] private float _speed = 18f;
     [SerializeField] private float _rotationSpeed = 1000f;
     [SerializeField] private float _maxDistance = 2f;
     [SerializeField] private LayerMask _layerMask = default;
     [SerializeField] private Vector3 _foodLocalPosition = new Vector3(0f, 1.694f, 1.04f);
+    [SerializeField] private Animator _animator = null;
 
     private Food _inHandFood = null;
     #endregion Fields
@@ -48,6 +49,9 @@ public class Rabbit : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
         }
 
+        // animation
+        _animator.SetBool("IsWalking", direction.magnitude > 0.01f);
+
         _controller.SimpleMove(direction * _speed);
     }
 
@@ -58,12 +62,18 @@ public class Rabbit : MonoBehaviour
         _inHandFood.transform.SetParent(transform);
         _inHandFood.transform.localPosition = _foodLocalPosition;
         _inHandFood.transform.localRotation = Quaternion.Euler(0f, -180f, 0f);
+
+        // animation
+        _animator.SetBool("IsHolding", IsHoldingFood);
     }
 
     public Food DropFood()
     {
         Food food = _inHandFood;
         _inHandFood = null;
+
+        // animation
+        _animator.SetBool("IsHolding", IsHoldingFood);
 
         return food;
     }
