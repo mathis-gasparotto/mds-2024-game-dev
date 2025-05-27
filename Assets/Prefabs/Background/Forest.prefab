@@ -1,0 +1,915 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6260285460853670916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1361584978190891462}
+  m_Layer: 0
+  m_Name: Forest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1361584978190891462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260285460853670916}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -43.33219, y: -0.47292498, z: -59.138783}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5393773140571722898}
+  - {fileID: 180209742997691864}
+  - {fileID: 5422987925184185513}
+  - {fileID: 986241018421376248}
+  - {fileID: 8054117268067662165}
+  - {fileID: 5682678648236010427}
+  - {fileID: 3687044107870252550}
+  - {fileID: 5939350135949169933}
+  - {fileID: 5266755163111496931}
+  - {fileID: 554170235943556049}
+  - {fileID: 7128468216786830106}
+  - {fileID: 315021878673365576}
+  - {fileID: 7263705999952348988}
+  - {fileID: 2196519755067227706}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &16457050955445306
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1361584978190891462}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 46.33219
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.47293448
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 92.13873
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4999992
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.4999995
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000008
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_Name
+      value: fire in woods (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14b755f670d536103acad00319164963, type: 3}
+--- !u!4 &554170235943556049 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+  m_PrefabInstance: {fileID: 16457050955445306}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &276293836201803171
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1361584978190891462}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.999601
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00058200955
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.13582993
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7056244
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.70858
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0020925403
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0020833744
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.237
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.0079956055
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.34698486
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_Name
+      value: fire in woods (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14b755f670d536103acad00319164963, type: 3}
+--- !u!4 &315021878673365576 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+  m_PrefabInstance: {fileID: 276293836201803171}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &363246425448675891
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1361584978190891462}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.33219147
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.47292343
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 46.138783
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_Name
+      value: fire in woods (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14b755f670d536103acad00319164963, type: 3}
+--- !u!4 &180209742997691864 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+  m_PrefabInstance: {fileID: 363246425448675891}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &731110938476909331
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1361584978190891462}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.33219147
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.47292605
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 68.13878
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_Name
+      value: fire in woods (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14b755f670d536103acad00319164963, type: 3}
+--- !u!4 &986241018421376248 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+  m_PrefabInstance: {fileID: 731110938476909331}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1869313155244857809
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1361584978190891462}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7056244
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.70858
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0020925403
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0020833744
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.237
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.0079956055
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.34698486
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_Name
+      value: fire in woods (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14b755f670d536103acad00319164963, type: 3}
+--- !u!4 &2196519755067227706 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+  m_PrefabInstance: {fileID: 1869313155244857809}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3792517324283628013
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1361584978190891462}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.33207
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.47290447
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.138779
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000018328428
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0000014831991
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_Name
+      value: fire in woods (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14b755f670d536103acad00319164963, type: 3}
+--- !u!4 &3687044107870252550 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+  m_PrefabInstance: {fileID: 3792517324283628013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5284507291829177424
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1361584978190891462}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.33219528
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4729288
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 91.13879
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071069
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000057369465
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0000007325017
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_Name
+      value: fire in woods (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14b755f670d536103acad00319164963, type: 3}
+--- !u!4 &5682678648236010427 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+  m_PrefabInstance: {fileID: 5284507291829177424}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5532931302085059394
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1361584978190891462}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.332191
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.47292605
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 68.13878
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_Name
+      value: fire in woods (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14b755f670d536103acad00319164963, type: 3}
+--- !u!4 &5422987925184185513 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+  m_PrefabInstance: {fileID: 5532931302085059394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5664961635640048392
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1361584978190891462}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 46.33207
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4729097
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.138737
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49999964
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.4999999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000003
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000024
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_Name
+      value: fire in woods (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14b755f670d536103acad00319164963, type: 3}
+--- !u!4 &5266755163111496931 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+  m_PrefabInstance: {fileID: 5664961635640048392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6189764508011360998
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1361584978190891462}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3320694
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.47290447
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.138779
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071069
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000054389244
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0000007038386
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_Name
+      value: fire in woods (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14b755f670d536103acad00319164963, type: 3}
+--- !u!4 &5939350135949169933 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+  m_PrefabInstance: {fileID: 6189764508011360998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7153800204623667415
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1361584978190891462}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.33264923
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.47235775
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 113.00297
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7056244
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.70858
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0020925403
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0020833744
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.237
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.0079956055
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.34698486
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_Name
+      value: fire in woods (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14b755f670d536103acad00319164963, type: 3}
+--- !u!4 &7263705999952348988 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+  m_PrefabInstance: {fileID: 7153800204623667415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7307039192159134961
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1361584978190891462}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.332249
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.47293976
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 113.138794
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7056244
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.70858
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0020925403
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0020833744
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.237
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.0079956055
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.34698486
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_Name
+      value: fire in woods (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14b755f670d536103acad00319164963, type: 3}
+--- !u!4 &7128468216786830106 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+  m_PrefabInstance: {fileID: 7307039192159134961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7516298350782471870
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1361584978190891462}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.332195
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4729288
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 91.13879
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.50000036
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.4999997
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 14b755f670d536103acad00319164963, type: 3}
+      propertyPath: m_Name
+      value: fire in woods (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14b755f670d536103acad00319164963, type: 3}
+--- !u!4 &8054117268067662165 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 14b755f670d536103acad00319164963, type: 3}
+  m_PrefabInstance: {fileID: 7516298350782471870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8599116116471248330
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1361584978190891462}
+    m_Modifications:
+    - target: {fileID: 3947240390670203874, guid: 789327e9e422c0bf69c572a63bc31fe4, type: 3}
+      propertyPath: m_Name
+      value: fire in woods
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435124879117312344, guid: 789327e9e422c0bf69c572a63bc31fe4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.332191
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435124879117312344, guid: 789327e9e422c0bf69c572a63bc31fe4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.47292343
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435124879117312344, guid: 789327e9e422c0bf69c572a63bc31fe4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 46.138783
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435124879117312344, guid: 789327e9e422c0bf69c572a63bc31fe4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435124879117312344, guid: 789327e9e422c0bf69c572a63bc31fe4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435124879117312344, guid: 789327e9e422c0bf69c572a63bc31fe4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435124879117312344, guid: 789327e9e422c0bf69c572a63bc31fe4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435124879117312344, guid: 789327e9e422c0bf69c572a63bc31fe4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435124879117312344, guid: 789327e9e422c0bf69c572a63bc31fe4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435124879117312344, guid: 789327e9e422c0bf69c572a63bc31fe4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 789327e9e422c0bf69c572a63bc31fe4, type: 3}
+--- !u!4 &5393773140571722898 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4435124879117312344, guid: 789327e9e422c0bf69c572a63bc31fe4, type: 3}
+  m_PrefabInstance: {fileID: 8599116116471248330}
+  m_PrefabAsset: {fileID: 0}

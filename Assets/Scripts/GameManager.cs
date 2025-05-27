@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public const string HIGH_SCORE_KEY = "highscore";
+
     private static GameManager _instance = null;
 
     public static GameManager Instance => _instance;
@@ -14,6 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioSource _endGameSoundSource = null;
 
     private int _score = 0;
+    private int _highscore = 0;
     private float _timer = 0f;
     private bool _isGameStarted = false;
     private bool _isGamePlayed = false;
@@ -41,6 +44,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        _highscore = PlayerPrefs.GetInt(HIGH_SCORE_KEY, 0);
         _score = 0;
         _timer = _timerStartValue;
         _isGamePlayed = false;
@@ -100,7 +104,8 @@ public class GameManager : MonoBehaviour
     {
         _isGamePlayed = false;
         MenuManager.Instance.ShowPauseMenu();
-        // disable inputs
+
+        _clockSoundSource.Stop();
     }
 
     public void ResumeGame()
@@ -114,6 +119,15 @@ public class GameManager : MonoBehaviour
         _endGameSoundSource.Play();
         _isGamePlayed = false;
         _isGameStarted = false;
+
+        if (_score > _highscore)
+        {
+            _highscore = _score;
+            PlayerPrefs.SetInt(HIGH_SCORE_KEY, _highscore);
+        }
+
+        OrderManager.Instance.CleanCurrentOrders();
+
         MenuManager.Instance.ShowEndMenu();
     }
 

@@ -85,6 +85,12 @@ public class OrderManager : MonoBehaviour
         _currentOrders.Add(objectOrder);
     }
 
+    public void CleanCurrentOrders()
+    {
+        MenuManager.Instance.GameMenu.DestroyAllOrders();
+        _currentOrders.Clear();
+    }
+
     private void Update()
     {
         if (GameManager.Instance.IsGamePlayed)

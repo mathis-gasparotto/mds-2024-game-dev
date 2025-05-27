@@ -26,6 +26,13 @@ public class Rabbit : MonoBehaviour
     #region Methods
     private void Update()
     {
+
+        if (!GameManager.Instance.IsGamePlayed)
+        {
+            _animator.SetBool("IsWalking", false);
+            return;
+        }
+
         Vector2 rawInput = _moveInputRef.action.ReadValue<Vector2>();
 
         if (_interactInputRef.action.WasPerformedThisFrame())

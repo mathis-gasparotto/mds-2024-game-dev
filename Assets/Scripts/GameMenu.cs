@@ -11,4 +11,12 @@ public class GameMenu : IMenu
         orderUi.Initialize(order);
         return orderUi.gameObject;
     }
+
+    public void DestroyAllOrders()
+    {
+        foreach (var order in OrderManager.Instance.CurrentOrders)
+        {
+            Destroy(order.Object);
+        }
+    }
 }

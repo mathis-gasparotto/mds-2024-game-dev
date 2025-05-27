@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70cbae2679097983dbf5f0905f8c90c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timerStartValue: 30
+  _timerStartValue: 100
   _timerWarningValue: 15
   _clockSoundSource: {fileID: 6869186829375131494}
   _endGameSoundSource: {fileID: 8282070623736051324}
