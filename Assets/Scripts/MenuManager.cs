@@ -6,10 +6,17 @@ public class MenuManager : MonoBehaviour
 
     public static MenuManager Instance => _instance;
 
+    #region Fields
     [SerializeField] private MainMenu _mainMenu = null;
     [SerializeField] private EndMenu _endMenu = null;
     [SerializeField] private GameMenu _gameMenu = null;
     [SerializeField] private PauseMenu _pauseMenu = null;
+    [SerializeField] private AudioSource _startButtonAudioSource = null;
+    #endregion Fields
+
+    #region Properties
+    public GameMenu GameMenu => _gameMenu;
+    #endregion Properties
 
     #region Methods
     private void Awake()
@@ -22,6 +29,11 @@ public class MenuManager : MonoBehaviour
 
         _instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    public void PlayStartButtonSound()
+    {
+        _startButtonAudioSource.Play();
     }
 
     public void ShowMainMenu()

@@ -45,6 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _potentialsOrders:
-  - {fileID: 11400000, guid: 788548f837acd2bed8b81f80a9098e93, type: 2}
-  - {fileID: 11400000, guid: ec58d318a54e8e4f19e5d880cecb2077, type: 2}
+  - Order: {fileID: 11400000, guid: 788548f837acd2bed8b81f80a9098e93, type: 2}
+    Weight: 2
+  - Order: {fileID: 11400000, guid: ec58d318a54e8e4f19e5d880cecb2077, type: 2}
+    Weight: 1
   _orderInterval: 15
+  _maxOrders: 4

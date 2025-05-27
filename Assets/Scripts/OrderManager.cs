@@ -10,6 +10,12 @@ public struct WeightedOrder
     public int Weight;
 }
 
+public struct ObjectOrder
+{
+    public Order Order;
+    public GameObject Object;
+}
+
 public class OrderManager : MonoBehaviour
 {
     private static OrderManager _instance = null;
@@ -21,9 +27,13 @@ public class OrderManager : MonoBehaviour
     [SerializeField] private float _orderInterval = 15f;
     [SerializeField] private int _maxOrders = 4;
 
-    private List<Order> _currentOrders = null;
+    private List<ObjectOrder> _currentOrders = null;
     private float _timer = 0f;
     #endregion Fields
+
+    #region Properties
+    public List<ObjectOrder> CurrentOrders => _currentOrders;
+    #endregion Properties
 
     #region Methods
     private void Awake()
@@ -40,7 +50,7 @@ public class OrderManager : MonoBehaviour
 
     private void Start()
     {
-        _currentOrders = new List<Order>();
+        _currentOrders = new List<ObjectOrder>();
     }
 
     public void TryValidateOrder(Food food)
@@ -50,11 +60,12 @@ public class OrderManager : MonoBehaviour
             return;
         }
 
-        Order order = _currentOrders.Find(o => o.Recipe.Result.Equals(food));
-        if (order != null)
+        ObjectOrder order = _currentOrders.Find(o => o.Order.Recipe.Result.Equals(food));
+        if (order.Order != null)
         {
             _currentOrders.Remove(order);
-            GameManager.Instance.AddScore(order.Score);
+            Destroy(order.Object);
+            GameManager.Instance.AddScore(order.Order.Score);
         }
     }
 
@@ -66,9 +77,12 @@ public class OrderManager : MonoBehaviour
         }
 
         WeightedOrder order = Helper.GetRandomFromWeightedList(_potentialsOrders, o => o.Weight);
-        Debug.Log("New order: " + order.Order.Recipe.Result.name);
-        _currentOrders.Add(order.Order);
-        // Debug.Log("New order: " + _currentOrders[0].Recipe.Result.name + " Weight: " + order.Weight);
+        ObjectOrder objectOrder = new ObjectOrder()
+        {
+            Order = order.Order,
+            Object = MenuManager.Instance.GameMenu.ShowNewOrder(order.Order)
+        };
+        _currentOrders.Add(objectOrder);
     }
 
     private void Update()

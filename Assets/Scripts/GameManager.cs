@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
 
     #region Fields
     [SerializeField] private float _timerStartValue = 100f;
+    [SerializeField] private float _timerWarningValue = 15f;
+    [SerializeField] private AudioSource _clockSoundSource = null;
+    [SerializeField] private AudioSource _endGameSoundSource = null;
 
     private int _score = 0;
     private float _timer = 0f;
@@ -54,9 +57,15 @@ public class GameManager : MonoBehaviour
 
         _timer -= Time.deltaTime;
 
+        if (_timer <= _timerWarningValue && _clockSoundSource.isPlaying == false)
+        {
+            _clockSoundSource.Play();
+        }
         if (_timer <= 0f)
         {
             _timer = 0f;
+            _clockSoundSource.Stop();
+
             EndGame();
         }
     }
@@ -67,6 +76,8 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
+
+        MenuManager.Instance.PlayStartButtonSound();
 
         AsyncOperation op = SceneManager.LoadSceneAsync(1);
         op.completed += OnLoadOperationComplete;
@@ -100,6 +111,7 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
+        _endGameSoundSource.Play();
         _isGamePlayed = false;
         _isGameStarted = false;
         MenuManager.Instance.ShowEndMenu();
