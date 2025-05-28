@@ -8,8 +8,13 @@ public class Counter : MonoBehaviour, IInteractable
     #endregion Fields
 
     #region Methods
-    public void InteractWith(Rabbit rabbit)
+    public void InteractWith(Rabbit rabbit, InteractType interactType)
     {
+        if (interactType != InteractType.Primary)
+        {
+            return;
+        }
+
         if (rabbit.IsHoldingFood && _food != null) {
             return;
         }

@@ -5,6 +5,7 @@ public class Rabbit : MonoBehaviour
 {
     #region Fields
     [SerializeField] private InputActionReference _interactInputRef = null;
+    [SerializeField] private InputActionReference _secondaryInteractInputRef = null;
     [SerializeField] private InputActionReference _moveInputRef = null;
     [SerializeField] private CharacterController _controller = null;
     [SerializeField] private Transform _rayOrigin = null;
@@ -26,7 +27,6 @@ public class Rabbit : MonoBehaviour
     #region Methods
     private void Update()
     {
-
         if (!GameManager.Instance.IsGamePlayed)
         {
             _animator.SetBool("IsWalking", false);
@@ -35,15 +35,27 @@ public class Rabbit : MonoBehaviour
 
         Vector2 rawInput = _moveInputRef.action.ReadValue<Vector2>();
 
-        if (_interactInputRef.action.WasPerformedThisFrame())
-        {
+
+        if (_interactInputRef.action.WasPerformedThisFrame() || _secondaryInteractInputRef.action.WasPerformedThisFrame()) {
+            InteractType interactType = InteractType.Primary;
+
+            if (_secondaryInteractInputRef.action.WasPerformedThisFrame())
+            {
+                interactType = InteractType.Secondary;
+            }
+
+            if (_interactInputRef.action.WasPerformedThisFrame())
+            {
+                interactType = InteractType.Primary;
+            }
+
             Ray ray = new Ray(_rayOrigin.position, transform.forward);
             if (Physics.Raycast(ray, out RaycastHit hit, _maxDistance, _layerMask))
             {
                 IInteractable interactable = hit.transform.gameObject.GetComponent<IInteractable>();
                 if (interactable != null)
                 {
-                    interactable.InteractWith(this);
+                    interactable.InteractWith(this, interactType);
                 }
             }
         }

@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactInputRef: {fileID: 8471741195216481075, guid: 875c8513e878814658587587c459a38d, type: 3}
+  _secondaryInteractInputRef: {fileID: 7315731796073290791, guid: 875c8513e878814658587587c459a38d, type: 3}
   _moveInputRef: {fileID: 7860367907972583975, guid: 875c8513e878814658587587c459a38d, type: 3}
   _controller: {fileID: 2592255887320117639}
   _rayOrigin: {fileID: 4029339077199340567}

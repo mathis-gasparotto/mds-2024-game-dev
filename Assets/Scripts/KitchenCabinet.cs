@@ -24,9 +24,16 @@ public class KitchenCabinet : MonoBehaviour, IInteractable
         _currentIngredients = null;
     }
 
-    public void InteractWith(Rabbit rabbit)
+    public void InteractWith(Rabbit rabbit, InteractType interactType)
     {
-        if (rabbit.InHandFood != null)
+        if (interactType == InteractType.Secondary)
+        {
+            _currentIngredients.Clear();
+            UpdateIngredientsCanvas();
+            return;
+        }
+
+        if (interactType == InteractType.Primary && rabbit.InHandFood != null)
         {
             if (_currentIngredients.Count >= _maxCurrentIngredients)
             {
@@ -36,7 +43,7 @@ public class KitchenCabinet : MonoBehaviour, IInteractable
             _currentIngredients.Add(rabbit.InHandFood.FoodType);
             Destroy(rabbit.InHandFood.gameObject);
             rabbit.DropFood();
-            
+
             foreach (var recipe in _recipes)
             {
                 bool isRecipeValid = true;

@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Interact",
+                    "name": "Interact (Primary)",
                     "type": "Button",
                     "id": "52f7289e-d806-4a6e-a99b-b1598adf4b78",
                     "expectedControlType": "",
@@ -27,6 +27,15 @@
                     "name": "Pause/Resume",
                     "type": "Button",
                     "id": "3f0f8793-85bd-4fc5-9295-5a4cd9337fd4",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Interact (Secondary)",
+                    "type": "Button",
+                    "id": "2de77b94-de48-4299-8ba7-dbb2dded8558",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -96,7 +105,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Interact",
+                    "action": "Interact (Primary)",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -108,6 +117,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Pause/Resume",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b0b6d732-be2a-47b4-b5cc-16086cc976ed",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact (Secondary)",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a0d7e9e7-b2f3-446a-a6c0-0b5ee96c4876",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact (Secondary)",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
