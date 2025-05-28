@@ -12,8 +12,6 @@ public class GameManager : MonoBehaviour
     #region Fields
     [SerializeField] private float _timerStartValue = 100f;
     [SerializeField] private float _timerWarningValue = 15f;
-    [SerializeField] private AudioSource _clockSoundSource = null;
-    [SerializeField] private AudioSource _endGameSoundSource = null;
 
     private int _score = 0;
     private int _highscore = 0;
@@ -61,14 +59,14 @@ public class GameManager : MonoBehaviour
 
         _timer -= Time.deltaTime;
 
-        if (_timer <= _timerWarningValue && _clockSoundSource.isPlaying == false)
+        if (_timer <= _timerWarningValue && AudioManager.Instance.IsClockTickAudioPlaying == false)
         {
-            _clockSoundSource.Play();
+            AudioManager.Instance.PlayClockTickAudio();
         }
         if (_timer <= 0f)
         {
             _timer = 0f;
-            _clockSoundSource.Stop();
+            AudioManager.Instance.StopClockTickAudio();
 
             EndGame();
         }
@@ -105,7 +103,7 @@ public class GameManager : MonoBehaviour
         _isGamePlayed = false;
         MenuManager.Instance.ShowPauseMenu();
 
-        _clockSoundSource.Stop();
+        AudioManager.Instance.StopClockTickAudio();
     }
 
     public void ResumeGame()
@@ -116,7 +114,7 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-        _endGameSoundSource.Play();
+        AudioManager.Instance.PlayEndGameAudio();
         _isGamePlayed = false;
         _isGameStarted = false;
 

@@ -11,7 +11,6 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private EndMenu _endMenu = null;
     [SerializeField] private GameMenu _gameMenu = null;
     [SerializeField] private PauseMenu _pauseMenu = null;
-    [SerializeField] private AudioSource _startButtonAudioSource = null;
     #endregion Fields
 
     #region Properties
@@ -33,7 +32,7 @@ public class MenuManager : MonoBehaviour
 
     public void PlayStartButtonSound()
     {
-        _startButtonAudioSource.Play();
+        AudioManager.Instance.PlayStartGameClickAudio();
     }
 
     public void ShowMainMenu()

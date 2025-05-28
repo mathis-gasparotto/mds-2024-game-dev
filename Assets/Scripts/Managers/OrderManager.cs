@@ -25,7 +25,7 @@ public class OrderManager : MonoBehaviour
     #region Fields
     [SerializeField] private List<WeightedOrder> _potentialsOrders = null;
     [SerializeField] private float _orderInterval = 15f;
-    [SerializeField] private int _maxOrders = 4;
+    [SerializeField] private int _maxOrders = 5;
 
     private List<ObjectOrder> _currentOrders = null;
     private float _timer = 0f;

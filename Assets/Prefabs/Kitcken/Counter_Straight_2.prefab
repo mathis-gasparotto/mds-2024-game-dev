@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2606338540341509839}
   - component: {fileID: 302163624535990283}
-  - component: {fileID: 6694922828975678287}
+  - component: {fileID: 220538391567501917}
   m_Layer: 3
   m_Name: DropPoint (1)
   m_TagString: Untagged
@@ -54,7 +54,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 1.923581, z: 2.607774}
   m_Center: {x: 0, y: -1.14, z: 0.41}
---- !u!114 &6694922828975678287
+--- !u!114 &220538391567501917
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,7 +63,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 522850637624336596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb58a1678d93913c59c225dd025275f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ae3c4073e2ff4685b466125ddedef6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1745393963422117552
@@ -76,7 +76,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2508225874737898737}
   - component: {fileID: 8122859645855385161}
-  - component: {fileID: 461035632470460114}
+  - component: {fileID: 2719989923435829401}
   m_Layer: 3
   m_Name: DropPoint
   m_TagString: Untagged
@@ -120,7 +120,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 1.923581, z: 2.607774}
   m_Center: {x: 0, y: -1.14, z: 0.41}
---- !u!114 &461035632470460114
+--- !u!114 &2719989923435829401
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1745393963422117552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb58a1678d93913c59c225dd025275f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ae3c4073e2ff4685b466125ddedef6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &9062308711044621402
