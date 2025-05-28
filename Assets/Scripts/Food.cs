@@ -4,14 +4,16 @@ using System;
 public enum FoodType
 {
     Default,
-    Avocado,
-    Octopus,
-    Cucumber,
-    Tuna,
-    CrabSticks,
-    Salmon,
-    EbiNigiri,
     Rice,
+    Cucumber,
+    SlicedCucumber,
+    Chukaman,
+    ChukamanSteamer,
+    Tuna,
+    MaguroNigiri,
+    Salmon,
+    SalmonNigiri,
+    Octopus,
     OctopusNigiri,
 }
 

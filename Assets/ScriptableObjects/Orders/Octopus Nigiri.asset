@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _recipe: {fileID: 11400000, guid: 5391fceaa4b2646c1a25ab96efeed03e, type: 2}
   _score: 10
+  _orderDuration: 50

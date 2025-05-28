@@ -14,7 +14,7 @@ public class GameMenu : IMenu
 
     public void DestroyAllOrders()
     {
-        foreach (var order in OrderManager.Instance.CurrentOrders)
+        foreach (ObjectOrder order in OrderManager.Instance.CurrentOrders)
         {
             Destroy(order.Object);
         }

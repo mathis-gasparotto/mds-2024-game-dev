@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2850f2c5d5f64dc3a8882ea95a0eda9a, type: 3}
   m_Name: Octopus Nigiri
   m_EditorClassIdentifier: 
-  _ingredients: 0200000008000000
+  _ingredients: 0a00000001000000
   _result: {fileID: -7681892737355749089, guid: 681809d043b912d579bedf1af5896585, type: 3}
-  _points: 0

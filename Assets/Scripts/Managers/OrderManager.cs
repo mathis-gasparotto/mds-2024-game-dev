@@ -24,10 +24,12 @@ public class OrderManager : MonoBehaviour
 
     #region Fields
     [SerializeField] private List<WeightedOrder> _potentialsOrders = null;
-    [SerializeField] private float _orderInterval = 15f;
+    [SerializeField] private float _orderInterval = 10f;
     [SerializeField] private int _maxOrders = 5;
 
     private List<ObjectOrder> _currentOrders = null;
+    private Dictionary<ObjectOrder, float> _orderTimers = null;
+    private List<ObjectOrder> _ordersToRemove = null;
     private float _timer = 0f;
     #endregion Fields
 
@@ -51,6 +53,15 @@ public class OrderManager : MonoBehaviour
     private void Start()
     {
         _currentOrders = new List<ObjectOrder>();
+        _orderTimers = new Dictionary<ObjectOrder, float>();
+        _ordersToRemove = new List<ObjectOrder>();
+    }
+
+    private void OnDestroy()
+    {
+        _currentOrders.Clear();
+        _orderTimers.Clear();
+        _ordersToRemove.Clear();
     }
 
     public void TryValidateOrder(Food food)
@@ -66,6 +77,7 @@ public class OrderManager : MonoBehaviour
             _currentOrders.Remove(order);
             Destroy(order.Object);
             GameManager.Instance.AddScore(order.Order.Score);
+            AudioManager.Instance.PlayFoodDeliveryAudio();
         }
     }
 
@@ -80,15 +92,22 @@ public class OrderManager : MonoBehaviour
         ObjectOrder objectOrder = new ObjectOrder()
         {
             Order = order.Order,
-            Object = MenuManager.Instance.GameMenu.ShowNewOrder(order.Order)
+            Object = MenuManager.Instance.GameMenu.ShowNewOrder(order.Order),
         };
         _currentOrders.Add(objectOrder);
+        _orderTimers.Add(objectOrder, objectOrder.Order.OrderDuration);
     }
 
     public void CleanCurrentOrders()
     {
         MenuManager.Instance.GameMenu.DestroyAllOrders();
         _currentOrders.Clear();
+    }
+
+    public void RemoveSingleOrder(ObjectOrder order)
+    {
+        _currentOrders.Remove(order);
+        Destroy(order.Object);
     }
 
     private void Update()
@@ -101,6 +120,19 @@ public class OrderManager : MonoBehaviour
                 _timer = 0f;
                 AddNewOrder();
             }
+            foreach (ObjectOrder order in _currentOrders)
+            {
+                _orderTimers[order] -= Time.deltaTime;
+                if (_orderTimers[order] <= 0f)
+                {
+                    _ordersToRemove.Add(order);
+                }
+            }
+            foreach (ObjectOrder order in _ordersToRemove)
+            {
+                RemoveSingleOrder(order);
+            }
+            _ordersToRemove.Clear();
         }
     }
     #endregion Methods

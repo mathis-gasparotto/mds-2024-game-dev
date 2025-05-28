@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
         _isGamePlayed = false;
         _isGameStarted = false;
         MenuManager.Instance.ShowMainMenu();
+        AudioManager.Instance.PlayGameSoundAudio();
     }
 
     private void Update()
@@ -110,11 +111,14 @@ public class GameManager : MonoBehaviour
     {
         _isGamePlayed = true;
         MenuManager.Instance.HidePauseMenu();
+
+        AudioManager.Instance.PlayGameSoundAudio();
     }
 
     public void EndGame()
     {
         AudioManager.Instance.PlayEndGameAudio();
+        AudioManager.Instance.StopGameSoundAudio();
         _isGamePlayed = false;
         _isGameStarted = false;
 
@@ -135,6 +139,7 @@ public class GameManager : MonoBehaviour
         _isGameStarted = false;
         SceneManager.LoadScene(0);
         MenuManager.Instance.ShowMainMenu();
+        AudioManager.Instance.PlayGameSoundAudio();
     }
 
     public void AddScore(int score)

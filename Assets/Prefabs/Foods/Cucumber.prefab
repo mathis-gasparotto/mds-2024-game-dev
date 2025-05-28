@@ -77,4 +77,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 656e00f6d43a425ac95f1a552ed1975f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _foodType: 3
+  _foodType: 2

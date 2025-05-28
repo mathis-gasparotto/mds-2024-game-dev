@@ -7,7 +7,9 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance => _instance;
 
     [SerializeField] private AudioSource _startGameClickAudioSource = null;
+    [SerializeField] private AudioSource _gameSoundAudioSource = null;
     [SerializeField] private AudioSource _clockTickAudioSource = null;
+    [SerializeField] private AudioSource _foodDeliveryAudioSource = null;
     [SerializeField] private AudioSource _endGameAudioSource = null;
 
     public bool IsClockTickAudioPlaying => _clockTickAudioSource.isPlaying;
@@ -36,9 +38,19 @@ public class AudioManager : MonoBehaviour
         _clockTickAudioSource.Play();
     }
 
+    public void PlayFoodDeliveryAudio()
+    {
+        _foodDeliveryAudioSource.Play();
+    }
+
     public void PlayEndGameAudio()
     {
         _endGameAudioSource.Play();
+    }
+
+    public void PlayGameSoundAudio()
+    {
+        _gameSoundAudioSource.Play();
     }
 
     public void StopClockTickAudio()
@@ -46,15 +58,25 @@ public class AudioManager : MonoBehaviour
         _clockTickAudioSource.Stop();
     }
 
+    public void StopFoodDeliveryAudio()
+    {
+        _foodDeliveryAudioSource.Stop();
+    }
+
     public void StopEndGameAudio()
     {
         _endGameAudioSource.Stop();
     }
 
+    public void StopGameSoundAudio()
+    {
+        _gameSoundAudioSource.Stop();
+    }
+
     public void StopAllAudio()
     {
+        StopGameSoundAudio();
         StopClockTickAudio();
-        StopEndGameAudio();
     }
     #endregion Methods
 }

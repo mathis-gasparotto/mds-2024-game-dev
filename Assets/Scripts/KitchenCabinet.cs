@@ -44,12 +44,16 @@ public class KitchenCabinet : MonoBehaviour, IInteractable
             Destroy(rabbit.InHandFood.gameObject);
             rabbit.DropFood();
 
-            foreach (var recipe in _recipes)
+            foreach (Recipe recipe in _recipes)
             {
                 bool isRecipeValid = true;
-                foreach (var ingredient in recipe.Ingredients)
+                List<FoodType> tempIngredients = new List<FoodType>(_currentIngredients);
+                foreach (FoodType ingredient in recipe.Ingredients)
                 {
-                    if (!_currentIngredients.Contains(ingredient))
+                    bool isIngredientValid = tempIngredients.Contains(ingredient);
+                    tempIngredients.Remove(ingredient);
+
+                    if (!isIngredientValid)
                     {
                         isRecipeValid = false;
                         break;
@@ -57,7 +61,7 @@ public class KitchenCabinet : MonoBehaviour, IInteractable
                 }
                 if (isRecipeValid)
                 {
-                    foreach (var ingr in recipe.Ingredients)
+                    foreach (FoodType ingr in recipe.Ingredients)
                     {
                         _currentIngredients.Remove(ingr);
                     }
@@ -76,7 +80,7 @@ public class KitchenCabinet : MonoBehaviour, IInteractable
         {
             Destroy(child.gameObject);
         }
-        foreach (var ingredient in _currentIngredients)
+        foreach (FoodType ingredient in _currentIngredients)
         {
             FoodImage foodImage = Instantiate(_foodImagePrefab, _currentIngredientsCanvaCountainer.transform);
             foodImage.SetFoodType(ingredient);

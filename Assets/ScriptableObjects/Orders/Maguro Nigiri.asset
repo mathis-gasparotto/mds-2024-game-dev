@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3da184edaebf42daa7f7daab64ca4b1, type: 3}
-  m_Name: Ebi Nigiri
+  m_Name: Maguro Nigiri
   m_EditorClassIdentifier: 
-  _recipe: {fileID: 11400000, guid: c36735d4fcf6433adbb367d76b817f6e, type: 2}
-  _score: 8
+  _recipe: {fileID: 11400000, guid: 9c441fbe2dcb6e38eac6367b36df39db, type: 2}
+  _score: 12
+  _orderDuration: 50

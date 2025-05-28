@@ -13,9 +13,25 @@ MonoBehaviour:
   m_Name: MainFoodSprites
   m_EditorClassIdentifier: 
   _foodSprites:
-  - FoodType: 2
+  - FoodType: 10
     Sprite: {fileID: 21300000, guid: c0a56db064fe19b60af3486ee9af428b, type: 3}
-  - FoodType: 8
+  - FoodType: 1
     Sprite: {fileID: 21300000, guid: 407df55cbdd2255cfbdb1ec5a64e307a, type: 3}
-  - FoodType: 6
+  - FoodType: 8
     Sprite: {fileID: 21300000, guid: 68fe4a08cec3fc00ebeff710b60f41d7, type: 3}
+  - FoodType: 4
+    Sprite: {fileID: 21300000, guid: 467101ae3092f532f9a7d378dda75956, type: 3}
+  - FoodType: 5
+    Sprite: {fileID: 21300000, guid: 75fd51339797a9f61af4922b5f4c7f36, type: 3}
+  - FoodType: 2
+    Sprite: {fileID: 21300000, guid: 275d2baa40405eb7fb6f426b174f1a5b, type: 3}
+  - FoodType: 7
+    Sprite: {fileID: 21300000, guid: 2feb48982ee421ad198c01b4e3fb8a1f, type: 3}
+  - FoodType: 11
+    Sprite: {fileID: 21300000, guid: 7dcf77d55ccca551fbcd5c8d619d02c6, type: 3}
+  - FoodType: 9
+    Sprite: {fileID: 21300000, guid: 101035e8ae8ccad4483cc7bb4155ef1d, type: 3}
+  - FoodType: 3
+    Sprite: {fileID: 21300000, guid: 32d13b7c7a6737cee8cea41b6095f329, type: 3}
+  - FoodType: 6
+    Sprite: {fileID: 21300000, guid: 64a522b371f5b7651b1f56b6cc08cd8a, type: 3}

@@ -358,8 +358,12 @@ MonoBehaviour:
   _recipes:
   - {fileID: 11400000, guid: c36735d4fcf6433adbb367d76b817f6e, type: 2}
   - {fileID: 11400000, guid: 5391fceaa4b2646c1a25ab96efeed03e, type: 2}
+  - {fileID: 11400000, guid: aef8b2fa877aed748b5eb65a342fb1ad, type: 2}
+  - {fileID: 11400000, guid: 9c441fbe2dcb6e38eac6367b36df39db, type: 2}
+  - {fileID: 11400000, guid: 0b6fc0036bd58c91ebcc720ebb720b5c, type: 2}
   _currentIngredientsCanvaCountainer: {fileID: 813400566798925999}
   _foodImagePrefab: {fileID: 2183557057748528900, guid: 991c38faf3e1465bcac62903fc35d4ec, type: 3}
+  _maxCurrentIngredients: 6
 --- !u!65 &8208145323101478820
 BoxCollider:
   m_ObjectHideFlags: 0

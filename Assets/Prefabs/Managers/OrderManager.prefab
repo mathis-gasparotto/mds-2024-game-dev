@@ -46,8 +46,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _potentialsOrders:
   - Order: {fileID: 11400000, guid: 788548f837acd2bed8b81f80a9098e93, type: 2}
-    Weight: 2
+    Weight: 3
   - Order: {fileID: 11400000, guid: ec58d318a54e8e4f19e5d880cecb2077, type: 2}
+    Weight: 2
+  - Order: {fileID: 11400000, guid: 0884fe05758f849d7a4784737e35b08d, type: 2}
+    Weight: 3
+  - Order: {fileID: 11400000, guid: fc8c597ab62a52ec8afb3ba2319e9cae, type: 2}
     Weight: 1
-  _orderInterval: 15
+  - Order: {fileID: 11400000, guid: 5f0ed604c8fdc0974832666062586f11, type: 2}
+    Weight: 3
+  _orderInterval: 10
   _maxOrders: 5
